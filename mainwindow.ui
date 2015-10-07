@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -71,6 +71,9 @@
          <width>761</width>
          <height>27</height>
         </rect>
+       </property>
+       <property name="text">
+        <string>./use_archive.py ~/Downloads/20150824-062821-1bea_epoch_30.0.tar.gz /tmp/picture.jpeg</string>
        </property>
       </widget>
      </widget>
