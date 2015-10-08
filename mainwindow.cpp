@@ -53,7 +53,7 @@ void messagebox(string title, string message)
         FILE* file= popen(command, "r");
         pclose(file);
     #else _WIN32
-        ::MessageBox( title.c_str(), string message.c_str(),MB_OK);
+    /*    ::MessageBox( title.c_str(), string message.c_str(),MB_OK); */
     #endif
 }
 
@@ -104,7 +104,7 @@ class MyVideoSurface : public QAbstractVideoSurface
         Q_UNUSED(handleType);
 
         // Return the formats you will support
-        return QList<QVideoFrame::PixelFormat>() << QVideoFrame::Format_BGR32;
+        return QList<QVideoFrame::PixelFormat>() << QVideoFrame::Format_RGB32;
     }
 
     QImage::Format m_imageFormat = QImage::Format_RGB32;
